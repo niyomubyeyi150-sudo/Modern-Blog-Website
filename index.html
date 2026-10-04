@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Tech & Web Dev Insight</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body>
-     <!-- Navigation Bar -->
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col font-['Inter',sans-serif]">
+
+  <!-- Navigation Bar -->
   <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
@@ -27,10 +31,12 @@
       </div>
     </div>
   </header>
-  <!--main container-->
+
+  <!-- Main Container -->
   <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
-     <!-- Banner Section -->
-    <section class="relative overflow-hidden rounded-2xl bg-slate-800 border border-slate-700/60 p-8 sm:p-12 mb-12 shadow-2xl">
+    
+    <!-- Banner Section -->
+    <section class="relative overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 p-8 sm:p-12 mb-12 shadow-2xl">
       <div class="max-w-2xl relative z-10">
         <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-blue-500/20 text-blue-400 border border-blue-500/30 mb-4">
           Engineering Digest
@@ -51,18 +57,18 @@
       <div class="absolute -right-16 -bottom-16 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
     </section>
 
-     <!-- Articles Feed Section -->
+    <!-- Articles Feed Section -->
     <section id="articles" class="space-y-6">
       <div class="flex items-center justify-between border-b border-slate-800 pb-4">
         <h2 class="text-2xl font-bold tracking-tight text-white">Latest Articles</h2>
         <span class="text-sm text-slate-400">6 articles published</span>
       </div>
 
-      <!-- Article Cards Grid (6 Cards Required) -->
+      <!-- Article Cards Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
         <!-- Card 1 -->
-        <article class="flex flex-col bg-slate-800/60 border border-slate-700/80 rounded-xl overflow-hidden shadow-sm hover:border-slate-600 transition-all duration-300 group">
+        <article class="flex flex-col bg-slate-900 border border-slate-800/80 rounded-xl overflow-hidden shadow-sm hover:border-slate-700 transition-all duration-300 group">
           <div class="relative aspect-video overflow-hidden bg-slate-800">
             <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&w=600&q=80" alt="Web Development" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
           </div>
@@ -71,11 +77,11 @@
               <span class="px-2.5 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">Web Dev</span>
               <span class="text-slate-400">5 min read</span>
             </div>
-            <h3 class="text-lg font-bold text-white group-hover:text-blue-400 transition-colors mb-2">
-              <a href="article.html">Building Scalable Architectures with Tailwind CSS v4</a>
+            <h3 class="text-lg font-bold mb-2">
+              <a href="article.html" class="text-blue-500 hover:text-blue-400 transition-colors">Building Scalable Architectures with Tailwind CSS v4</a>
             </h3>
-            <p class="text-slate-400 text-sm line-clamp-3 mb-6 flex-grow">How modern engine directives simplify production stylesheets without complex bundlers.</p>
-            <div class="flex items-center justify-between text-xs text-slate-400 pt-4 border-t border-slate-700/60">
+            <p class="text-slate-300 text-sm line-clamp-3 mb-6 flex-grow">How modern engine directives simplify production stylesheets without complex bundlers.</p>
+            <div class="flex items-center justify-between text-xs text-slate-400 pt-4 border-t border-slate-800">
               <span>Alex Rivera</span>
               <span>Oct 1, 2026</span>
             </div>
@@ -83,7 +89,7 @@
         </article>
 
         <!-- Card 2 -->
-        <article class="flex flex-col bg-slate-800/60 border border-slate-700/80 rounded-xl overflow-hidden shadow-sm hover:border-slate-600 transition-all duration-300 group">
+        <article class="flex flex-col bg-slate-900 border border-slate-800/80 rounded-xl overflow-hidden shadow-sm hover:border-slate-700 transition-all duration-300 group">
           <div class="relative aspect-video overflow-hidden bg-slate-800">
             <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=600&q=80" alt="UI Design" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
           </div>
@@ -92,11 +98,11 @@
               <span class="px-2.5 py-1 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">Design</span>
               <span class="text-slate-400">7 min read</span>
             </div>
-            <h3 class="text-lg font-bold text-white group-hover:text-blue-400 transition-colors mb-2">
-              <a href="article.html">Mastering UI Micro-Interactions & Transitions</a>
+            <h3 class="text-lg font-bold mb-2">
+              <a href="article.html" class="text-white hover:text-blue-400 transition-colors">Mastering UI Micro-Interactions & Transitions</a>
             </h3>
-            <p class="text-slate-400 text-sm line-clamp-3 mb-6 flex-grow">Improving application polish and user feedback using native CSS hover effects and fluid scale transitions.</p>
-            <div class="flex items-center justify-between text-xs text-slate-400 pt-4 border-t border-slate-700/60">
+            <p class="text-slate-300 text-sm line-clamp-3 mb-6 flex-grow">Improving application polish and user feedback using native CSS hover effects and fluid scale transitions.</p>
+            <div class="flex items-center justify-between text-xs text-slate-400 pt-4 border-t border-slate-800">
               <span>Sarah Chen</span>
               <span>Sep 28, 2026</span>
             </div>
@@ -104,7 +110,7 @@
         </article>
 
         <!-- Card 3 -->
-        <article class="flex flex-col bg-slate-800/60 border border-slate-700/80 rounded-xl overflow-hidden shadow-sm hover:border-slate-600 transition-all duration-300 group">
+        <article class="flex flex-col bg-slate-900 border border-slate-800/80 rounded-xl overflow-hidden shadow-sm hover:border-slate-700 transition-all duration-300 group">
           <div class="relative aspect-video overflow-hidden bg-slate-800">
             <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80" alt="Cloud" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
           </div>
@@ -113,11 +119,11 @@
               <span class="px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Tech</span>
               <span class="text-slate-400">10 min read</span>
             </div>
-            <h3 class="text-lg font-bold text-white group-hover:text-blue-400 transition-colors mb-2">
-              <a href="article.html">Edge Computing Patterns for Global Delivery</a>
+            <h3 class="text-lg font-bold mb-2">
+              <a href="article.html" class="text-white hover:text-blue-400 transition-colors">Edge Computing Patterns for Global Delivery</a>
             </h3>
-            <p class="text-slate-400 text-sm line-clamp-3 mb-6 flex-grow">Architectural strategies for serving static assets and dynamic APIs directly at distributed edge nodes.</p>
-            <div class="flex items-center justify-between text-xs text-slate-400 pt-4 border-t border-slate-700/60">
+            <p class="text-slate-300 text-sm line-clamp-3 mb-6 flex-grow">Architectural strategies for serving static assets and dynamic APIs directly at distributed edge nodes.</p>
+            <div class="flex items-center justify-between text-xs text-slate-400 pt-4 border-t border-slate-800">
               <span>David Marcus</span>
               <span>Sep 24, 2026</span>
             </div>
@@ -125,7 +131,7 @@
         </article>
 
         <!-- Card 4 -->
-        <article class="flex flex-col bg-slate-800/60 border border-slate-700/80 rounded-xl overflow-hidden shadow-sm hover:border-slate-600 transition-all duration-300 group">
+        <article class="flex flex-col bg-slate-900 border border-slate-800/80 rounded-xl overflow-hidden shadow-sm hover:border-slate-700 transition-all duration-300 group">
           <div class="relative aspect-video overflow-hidden bg-slate-800">
             <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="Code" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
           </div>
@@ -134,11 +140,11 @@
               <span class="px-2.5 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">Web Dev</span>
               <span class="text-slate-400">6 min read</span>
             </div>
-            <h3 class="text-lg font-bold text-white group-hover:text-blue-400 transition-colors mb-2">
-              <a href="article.html">Semantic HTML Guidelines & Best Practices</a>
+            <h3 class="text-lg font-bold mb-2">
+              <a href="article.html" class="text-white hover:text-blue-400 transition-colors">Semantic HTML Guidelines & Best Practices</a>
             </h3>
-            <p class="text-slate-400 text-sm line-clamp-3 mb-6 flex-grow">Maximizing document accessibility, screen reader navigation, and SEO using standard HTML5 landmarks.</p>
-            <div class="flex items-center justify-between text-xs text-slate-400 pt-4 border-t border-slate-700/60">
+            <p class="text-slate-300 text-sm line-clamp-3 mb-6 flex-grow">Maximizing document accessibility, screen reader navigation, and SEO using standard HTML5 landmarks.</p>
+            <div class="flex items-center justify-between text-xs text-slate-400 pt-4 border-t border-slate-800">
               <span>Alex Rivera</span>
               <span>Sep 20, 2026</span>
             </div>
@@ -146,7 +152,7 @@
         </article>
 
         <!-- Card 5 -->
-        <article class="flex flex-col bg-slate-800/60 border border-slate-700/80 rounded-xl overflow-hidden shadow-sm hover:border-slate-600 transition-all duration-300 group">
+        <article class="flex flex-col bg-slate-900 border border-slate-800/80 rounded-xl overflow-hidden shadow-sm hover:border-slate-700 transition-all duration-300 group">
           <div class="relative aspect-video overflow-hidden bg-slate-800">
             <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80" alt="Design" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
           </div>
@@ -155,11 +161,11 @@
               <span class="px-2.5 py-1 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">Design</span>
               <span class="text-slate-400">4 min read</span>
             </div>
-            <h3 class="text-lg font-bold text-white group-hover:text-blue-400 transition-colors mb-2">
-              <a href="article.html">Building Accessible Dark Mode Palettes</a>
+            <h3 class="text-lg font-bold mb-2">
+              <a href="article.html" class="text-white hover:text-blue-400 transition-colors">Building Accessible Dark Mode Palettes</a>
             </h3>
-            <p class="text-slate-400 text-sm line-clamp-3 mb-6 flex-grow">Structuring CSS color contrast ratios to meet WCAG AA accessibility standards seamlessly across dark themes.</p>
-            <div class="flex items-center justify-between text-xs text-slate-400 pt-4 border-t border-slate-700/60">
+            <p class="text-slate-300 text-sm line-clamp-3 mb-6 flex-grow">Structuring CSS color contrast ratios to meet WCAG AA accessibility standards seamlessly across dark themes.</p>
+            <div class="flex items-center justify-between text-xs text-slate-400 pt-4 border-t border-slate-800">
               <span>Sarah Chen</span>
               <span>Sep 15, 2026</span>
             </div>
@@ -167,7 +173,7 @@
         </article>
 
         <!-- Card 6 -->
-        <article class="flex flex-col bg-slate-800/60 border border-slate-700/80 rounded-xl overflow-hidden shadow-sm hover:border-slate-600 transition-all duration-300 group">
+        <article class="flex flex-col bg-slate-900 border border-slate-800/80 rounded-xl overflow-hidden shadow-sm hover:border-slate-700 transition-all duration-300 group">
           <div class="relative aspect-video overflow-hidden bg-slate-800">
             <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80" alt="Security" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
           </div>
@@ -176,11 +182,11 @@
               <span class="px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Tech</span>
               <span class="text-slate-400">8 min read</span>
             </div>
-            <h3 class="text-lg font-bold text-white group-hover:text-blue-400 transition-colors mb-2">
-              <a href="article.html">Zero-Trust Models for Frontend Security</a>
+            <h3 class="text-lg font-bold mb-2">
+              <a href="article.html" class="text-white hover:text-blue-400 transition-colors">Zero-Trust Models for Frontend Security</a>
             </h3>
-            <p class="text-slate-400 text-sm line-clamp-3 mb-6 flex-grow">Implementing robust Content Security Policies (CSP) and client-side token validation.</p>
-            <div class="flex items-center justify-between text-xs text-slate-400 pt-4 border-t border-slate-700/60">
+            <p class="text-slate-300 text-sm line-clamp-3 mb-6 flex-grow">Implementing robust Content Security Policies (CSP) and client-side token validation.</p>
+            <div class="flex items-center justify-between text-xs text-slate-400 pt-4 border-t border-slate-800">
               <span>David Marcus</span>
               <span>Sep 10, 2026</span>
             </div>
@@ -197,7 +203,5 @@
     <p>Designed and built by Nadine</p>
   </footer>
 
-
-  </main>
 </body>
 </html>
