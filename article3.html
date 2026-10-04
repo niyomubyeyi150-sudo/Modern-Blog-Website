@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Modern Tech Architecture: Edge Delivery & Frontend Security - DevInsights</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col font-['Inter',sans-serif]">
+
+  <header class="fixed top-0 z-50 w-full bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center space-x-2 font-extrabold text-xl tracking-tight text-white">
+          <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+          </svg>
+          <span>Dev<span class="text-blue-500">Insights</span></span>
+        </a>
+        <a href="index.html" class="inline-flex items-center space-x-2 text-sm font-medium text-slate-400 hover:text-white transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          <span>Back to Feed</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 mt-16">
+    <div class="mb-6">
+      <a href="index.html" class="inline-flex items-center text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors">
+        ← Back to Feed
+      </a>
+    </div>
+
+    <header class="mb-8">
+      <div class="flex items-center space-x-3 mb-4">
+        <span class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Tech</span>
+        <span class="text-xs text-slate-400">14 min read</span>
+        <span class="text-xs text-slate-500">•</span>
+        <span class="text-xs text-slate-400">Updated Oct 2026</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+        Next-Gen Infrastructure: Edge Delivery & Zero-Trust Security
+      </h1>
+
+      <div class="flex items-center space-x-3 py-4 border-y border-slate-800">
+        <img src="https://i.pravatar.cc/100?img=33" alt="David Marcus" class="w-10 h-10 rounded-full object-cover border border-slate-700">
+        <div>
+          <p class="text-sm font-semibold text-slate-200">David Marcus</p>
+          <p class="text-xs text-slate-400">Cloud & Security Specialist</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="relative aspect-video rounded-2xl overflow-hidden mb-10 border border-slate-800 shadow-2xl">
+      <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80" alt="Cloud Infrastructure" class="w-full h-full object-cover">
+    </div>
+
+    <article class="space-y-8 text-slate-300 leading-relaxed text-base sm:text-lg">
+      <p class="text-xl font-medium text-slate-200 leading-relaxed">
+        Building resilient web applications requires combining global edge delivery networks with strict client-side security architecture. This guide explores modern edge patterns and zero-trust security practices.
+      </p>
+
+      <!-- Section 1 -->
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-bold text-white pt-6 border-t border-slate-800">
+          Part 1: Edge Computing Patterns for Global Delivery
+        </h2>
+        <p>
+          Traditional cloud hosting relies on central server locations, creating latency for users far from the origin data center. Edge computing solves this by running code on distributed servers worldwide close to the end user.
+        </p>
+
+        <h3 class="text-xl font-bold text-slate-100 mt-4">Key Benefits of Edge Architectures</h3>
+        <ul class="list-disc pl-6 space-y-2 text-slate-300">
+          <li><strong class="text-white">Reduced Latency:</strong> By processing requests at Point-of-Presence (PoP) locations nearby, response times drop from hundreds of milliseconds to under 20ms.</li>
+          <li><strong class="text-white">Smart Caching Header Strategies:</strong> Utilizing `Cache-Control: max-age=3600, stale-while-revalidate=86400` allows edge nodes to immediately return cached content while quietly updating stale data in the background.</li>
+          <li><strong class="text-white">Static Asset Offloading:</strong> Distributing static files (HTML, CSS, JS, compressed images) across global CDN nodes removes strain from origin servers.</li>
+        </ul>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-bold text-white pt-6 border-t border-slate-800">
+          Part 2: Zero-Trust Models for Frontend Security
+        </h2>
+        <p>
+          In a Zero-Trust security model, the web application never assumes that the browser runtime environment or third-party dependencies are safe. Every request and data transfer must be validated.
+        </p>
+
+        <h3 class="text-xl font-bold text-slate-100 mt-4">1. Enforce Content Security Policy (CSP) Headers</h3>
+        <p>
+          Prevent Cross-Site Scripting (XSS) attacks by configuring HTTP response headers that restrict which script sources, styles, and image domains the browser is allowed to load.
+        </p>
+
+        <h3 class="text-xl font-bold text-slate-100 mt-4">2. Secure Token Storage Practices</h3>
+        <p>
+          Never store sensitive authentication credentials or user JWTs inside `localStorage` or `sessionStorage`. Because client-side JavaScript can inspect these APIs, malicious scripts can read user tokens. Always deliver tokens inside `HttpOnly`, `Secure`, `SameSite=Strict` HTTP cookies.
+        </p>
+
+        <h3 class="text-xl font-bold text-slate-100 mt-4">3. Data Sanitization & Input Validation</h3>
+        <p>
+          Always validate user form inputs on both client and server layers. Never inject un-sanitized user strings directly into web page DOM nodes without escaping special character characters.
+        </p>
+      </section>
+    </article>
+
+    <div class="mt-12 pt-6 border-t border-slate-800">
+      <a href="index.html" class="inline-flex items-center space-x-2 text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors">
+        <span>← Back to all articles</span>
+      </a>
+    </div>
+  </main>
+
+  <footer class="bg-slate-900 border-t border-slate-800 py-8 text-sm text-slate-400 mt-16 text-center">
+    <p>© 2026 DevInsights. Designed and built by Nadine.</p>
+  </footer>
+</body>
+</html>

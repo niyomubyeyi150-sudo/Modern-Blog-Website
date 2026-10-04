@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Modern Web Development: Architecture & Standards - DevInsights</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col font-['Inter',sans-serif]">
+
+  <!-- Header Navigation -->
+  <header class="fixed top-0 z-50 w-full bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center space-x-2 font-extrabold text-xl tracking-tight text-white">
+          <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+          </svg>
+          <span>Dev<span class="text-blue-500">Insights</span></span>
+        </a>
+        <a href="index.html" class="inline-flex items-center space-x-2 text-sm font-medium text-slate-400 hover:text-white transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          <span>Back to Home</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 mt-16">
+    <div class="mb-6">
+      <a href="index.html" class="inline-flex items-center text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors">
+        ← Back to Home
+      </a>
+    </div>
+
+    <header class="mb-8">
+      <div class="flex items-center space-x-3 mb-4">
+        <span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-500/10 text-blue-400 border border-blue-500/20">Web Dev</span>
+        <span class="text-xs text-slate-400">12 min read</span>
+        <span class="text-xs text-slate-500">•</span>
+        <span class="text-xs text-slate-400">Updated Oct 2026</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+        Modern Web Development: Scalable CSS & Semantic HTML
+      </h1>
+
+      <div class="flex items-center space-x-3 py-4 border-y border-slate-800">
+        <img src="https://i.pravatar.cc/100?img=12" alt="Alex Rivera" class="w-10 h-10 rounded-full object-cover border border-slate-700">
+        <div>
+          <p class="text-sm font-semibold text-slate-200">Alex Rivera</p>
+          <p class="text-xs text-slate-400">Senior Frontend Architect</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="relative aspect-video rounded-2xl overflow-hidden mb-10 border border-slate-800 shadow-2xl">
+      <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&w=1200&q=80" alt="Web Development Code" class="w-full h-full object-cover">
+    </div>
+
+    <!-- Main Article Body -->
+    <article class="space-y-8 text-slate-300 leading-relaxed text-base sm:text-lg">
+      <p class="text-xl font-medium text-slate-200 leading-relaxed">
+        Building modern web applications requires a solid understanding of structural HTML standards alongside high-performance CSS styling engines. In this complete guide, we examine how Tailwind CSS v4 and semantic HTML markup come together to form maintainable web projects.
+      </p>
+
+      <!-- Section 1 -->
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-bold text-white pt-6 border-t border-slate-800">
+          Part 1: Building Scalable Architectures with Tailwind CSS v4
+        </h2>
+        <p>
+          As applications grow, managing custom CSS files becomes difficult due to class name collisions, bloated stylesheets, and dead code accumulation. Utility-first frameworks solve this by binding styles directly to markup structures.
+        </p>
+        <p>
+          Tailwind CSS v4 introduces a reimagined compiler engine built natively for lightning-fast build times without extra bundler setup. Here are key strategies for managing scalable code bases:
+        </p>
+        <ul class="list-disc pl-6 space-y-2 text-slate-300">
+          <li><strong class="text-white">Design Token Standardization:</strong> Rely consistently on Tailwind’s default spacing scales (`p-4`, `m-6`, `gap-3`) and color palettes (`slate-900`, `blue-500`) instead of hardcoding arbitrary values.</li>
+          <li><strong class="text-white">Component Extraction:</strong> When UI elements (like primary buttons or card badges) repeat across pages, encapsulate them in component structures or CSS `@apply` rules to keep layouts uniform.</li>
+          <li><strong class="text-white">Fluid Typography:</strong> Use responsive utility prefixes (`text-base sm:text-lg lg:text-xl`) to ensure text smoothly adapts across mobile screens, tablets, and wide desktop displays.</li>
+        </ul>
+        <blockquote class="p-4 border-l-4 border-blue-500 bg-slate-900/60 rounded-r-lg italic text-slate-200">
+          "Scalable frontend architecture is defined by how effortlessly a codebase can adapt to new feature requests without increasing CSS bundle sizes."
+        </blockquote>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-bold text-white pt-6 border-t border-slate-800">
+          Part 2: Semantic HTML Guidelines & Best Practices
+        </h2>
+        <p>
+          While visual styling defines the user experience on screen, HTML semantic tags define the logical core of the web document. Proper semantics are essential for accessibility (a11y), screen readers, and SEO indexing.
+        </p>
+
+        <h3 class="text-xl font-bold text-slate-100 mt-4">1. Replace Generic Div Containers with Landmark Elements</h3>
+        <p>
+          Screen readers rely on explicit landmark tags to navigate content efficiently. Avoid wrapping your entire web page in nested "div" blocks. Instead, structure layouts using standard HTML tags:
+        </p>
+        <ul class="list-disc pl-6 space-y-2 text-slate-300">
+          <li><header> Defines top navigation menus, branding logos, and key user actions.</li>
+          <li><main> Wraps the core unique content of the current web page.</li>
+          <li><article> Encloses self-contained content items like blog posts, news stories, or forum cards.</li>
+          <li><section> Groups related content headings and thematic paragraphs together.</li>
+          <li><footer>Contains copyright notices, legal documentation, and secondary links.</li>
+        </ul>
+
+        <h3 class="text-xl font-bold text-slate-100 mt-4">2. Heading Hierarchy Rules</h3>
+        <p>
+          Maintain strict header ordering (h1 down to h6). Never skip heading levels (e.g., jumping directly from h1 to h3) merely to adjust font sizing. Sizing should always be managed through CSS classes while maintaining semantic document structure.
+        </p>
+
+        <h3 class="text-xl font-bold text-slate-100 mt-4">3. Form Control Associations</h3>
+        <p>
+          Always associate (label) elements explicitly with their target (input) elements using matching "for" and "id" attributes. This increases click hit-areas on small devices and allows assistive technology to read field context aloud.
+        </p>
+      </section>
+    </article>
+
+    <div class="mt-12 pt-6 border-t border-slate-800">
+      <a href="index.html" class="inline-flex items-center space-x-2 text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors">
+        <span>← Back to all articles</span>
+      </a>
+    </div>
+  </main>
+
+  <footer class="bg-slate-900 border-t border-slate-800 py-8 text-sm text-slate-400 mt-16 text-center">
+    <p>© 2026 DevInsights. Designed and built by Nadine.</p>
+  </footer>
+</body>
+</html>
