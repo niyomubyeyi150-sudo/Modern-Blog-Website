@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>UI/UX Design Systems: Micro-Interactions & Dark Mode - DevInsights</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col font-['Inter',sans-serif]">
+
+  <header class="fixed top-0 z-50 w-full bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center space-x-2 font-extrabold text-xl tracking-tight text-white">
+          <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+          </svg>
+          <span>Dev<span class="text-blue-500">Insights</span></span>
+        </a>
+        <a href="index.html" class="inline-flex items-center space-x-2 text-sm font-medium text-slate-400 hover:text-white transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          <span>Back to Home</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 mt-16">
+    <div class="mb-6">
+      <a href="index.html" class="inline-flex items-center text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors">
+        ← Back to Home
+      </a>
+    </div>
+
+    <header class="mb-8">
+      <div class="flex items-center space-x-3 mb-4">
+        <span class="px-3 py-1 rounded-full text-xs font-bold bg-purple-500/10 text-purple-400 border border-purple-500/20">Design</span>
+        <span class="text-xs text-slate-400">11 min read</span>
+        <span class="text-xs text-slate-500">•</span>
+        <span class="text-xs text-slate-400">Updated Oct 2026</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+        Mastering UI/UX: Micro-Interactions & Accessible Dark Mode
+      </h1>
+
+      <div class="flex items-center space-x-3 py-4 border-y border-slate-800">
+        <img src="https://i.pravatar.cc/100?img=47" alt="Sarah Chen" class="w-10 h-10 rounded-full object-cover border border-slate-700">
+        <div>
+          <p class="text-sm font-semibold text-slate-200">Sarah Chen</p>
+          <p class="text-xs text-slate-400">Lead UI/UX Designer</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="relative aspect-video rounded-2xl overflow-hidden mb-10 border border-slate-800 shadow-2xl">
+      <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=1200&q=80" alt="UI Design System" class="w-full h-full object-cover">
+    </div>
+
+    <article class="space-y-8 text-slate-300 leading-relaxed text-base sm:text-lg">
+      <p class="text-xl font-medium text-slate-200 leading-relaxed">
+        Modern UI design is far more than selecting attractive color schemes. It requires crafting functional feedback loops and ensuring interfaces remain accessible across diverse lighting environments and visual preferences.
+      </p>
+
+      <!-- Section 1 -->
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-bold text-white pt-6 border-t border-slate-800">
+          Part 1: Mastering UI Micro-Interactions & CSS Transitions
+        </h2>
+        <p>
+          Micro-interactions are subtle visual triggers that confirm user behavior such as button hover effects, active click depressions, loading spinners, and navigation highlights.
+        </p>
+
+        <h3 class="text-xl font-bold text-slate-100 mt-4">Core Principles of Motion Design</h3>
+        <ul class="list-disc pl-6 space-y-2 text-slate-300">
+          <li><strong class="text-white">Immediate Feedback Loops:</strong> Users should receive instant visual acknowledgment when interacting with buttons, form inputs, or links (e.g., `hover:-translate-y-1` or `transition-all duration-200`).</li>
+          <li><strong class="text-white">Hardware-Accelerated Properties:</strong> Stick strictly to CSS properties that trigger GPU rendering primarily "transform" (scale, translate) and "opacity". Avoid animating width, height, or margin, as these trigger expensive document reflows.</li>
+          <li><strong class="text-white">Natural Easing Curves:</strong> Use ease-in-out transitions for entry animations and quick linear response times for interactive buttons to avoid clunky user interactions.</li>
+        </ul>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-bold text-white pt-6 border-t border-slate-800">
+          Part 2: Building Accessible Dark Mode Color Palettes
+        </h2>
+        <p>
+          Dark themes reduce eye strain in low-light environments and save power on modern OLED screens. However, improperly designed dark modes often suffer from visual glare and illegible text.
+        </p>
+
+        <h3 class="text-xl font-bold text-slate-100 mt-4">1. Avoid Pure Black (#000000) Backgrounds</h3>
+        <p>
+          Extreme contrast between pure white text (`#FFFFFF`) and pitch black backgrounds (`#000000`) causes heavy halation and eye strain. Use soft dark slate backgrounds (e.g., `#0F172A` or `#020617`) for a cleaner visual surface.
+        </p>
+
+        <h3 class="text-xl font-bold text-slate-100 mt-4">2. Express Depth through Lightness, Not Heavy Shadows</h3>
+        <p>
+          In light mode, drop shadows communicate depth. In dark mode, shadows are mostly invisible. Express depth by lightening the background color of floating cards, modals, and menus as they get closer to the foreground user layer.
+        </p>
+
+        <h3 class="text-xl font-bold text-slate-100 mt-4">3. Meeting WCAG AAA Contrast Ratios</h3>
+        <p>
+          Ensure primary body text meets a minimum contrast ratio of **4.5:1** against dark surface backgrounds. Muted secondary metadata text should maintain at least a **3:1** ratio for easy reading.
+        </p>
+      </section>
+    </article>
+
+    <div class="mt-12 pt-6 border-t border-slate-800">
+      <a href="index.html" class="inline-flex items-center space-x-2 text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors">
+        <span>← Back to all articles</span>
+      </a>
+    </div>
+  </main>
+
+  <footer class="bg-slate-900 border-t border-slate-800 py-8 text-sm text-slate-400 mt-16 text-center">
+    <p>© 2026 DevInsights. Designed and built by Nadine.</p>
+  </footer>
+</body>
+</html>

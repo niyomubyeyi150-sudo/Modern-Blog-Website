@@ -12,7 +12,7 @@
 <body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col font-['Inter',sans-serif]">
 
   <!-- Navigation Bar -->
-  <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+  <header class="fixed top-0 z-50 w-full bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <a href="index.html" class="flex items-center space-x-2 font-extrabold text-xl tracking-tight text-white">
@@ -23,17 +23,17 @@
         </a>
 
         <nav class="flex space-x-1 sm:space-x-2 overflow-x-auto py-2">
-          <a href="#" class="px-3.5 py-1.5 rounded-lg text-sm font-medium bg-blue-600 text-white">For You</a>
-          <a href="#" class="px-3.5 py-1.5 rounded-lg text-sm font-medium text-slate-400 hover:text-white hover:bg-slate-900 transition-colors">Web Dev</a>
-          <a href="#" class="px-3.5 py-1.5 rounded-lg text-sm font-medium text-slate-400 hover:text-white hover:bg-slate-900 transition-colors">Design</a>
-          <a href="#" class="px-3.5 py-1.5 rounded-lg text-sm font-medium text-slate-400 hover:text-white hover:bg-slate-900 transition-colors">Tech</a>
+          <a href="index.html" class="px-3.5 py-1.5 rounded-lg text-sm font-medium bg-blue-600 text-white">For You</a>
+          <a href="article1.html" class="px-3.5 py-1.5 rounded-lg text-sm font-medium text-slate-400 hover:text-white hover:bg-slate-900 transition-colors">Web Dev</a>
+          <a href="article2.html" class="px-3.5 py-1.5 rounded-lg text-sm font-medium text-slate-400 hover:text-white hover:bg-slate-900 transition-colors">Design</a>
+          <a href="article3.html" class="px-3.5 py-1.5 rounded-lg text-sm font-medium text-slate-400 hover:text-white hover:bg-slate-900 transition-colors">Tech</a>
         </nav>
       </div>
     </div>
   </header>
 
   <!-- Main Container -->
-  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 mt-16">
     
     <!-- Banner Section -->
     <section class="relative overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 p-8 sm:p-12 mb-12 shadow-2xl">
@@ -78,11 +78,14 @@
               <span class="text-slate-400">5 min read</span>
             </div>
             <h3 class="text-lg font-bold mb-2">
-              <a href="article.html" class="text-blue-500 hover:text-blue-400 transition-colors">Building Scalable Architectures with Tailwind CSS v4</a>
+              <a href="article1.html" class="text-blue-500 hover:text-blue-400 transition-colors">Building Scalable Architectures with Tailwind CSS v4</a>
             </h3>
             <p class="text-slate-300 text-sm line-clamp-3 mb-6 flex-grow">How modern engine directives simplify production stylesheets without complex bundlers.</p>
             <div class="flex items-center justify-between text-xs text-slate-400 pt-4 border-t border-slate-800">
-              <span>Alex Rivera</span>
+              <div class="flex items-center space-x-2">
+                <img src="https://i.pravatar.cc/100?img=12" alt="Alex Rivera" class="w-6 h-6 rounded-full object-cover border border-slate-700">
+                <span class="font-medium text-slate-300">Alex Rivera</span>
+              </div>
               <span>Oct 1, 2026</span>
             </div>
           </div>
@@ -99,11 +102,14 @@
               <span class="text-slate-400">7 min read</span>
             </div>
             <h3 class="text-lg font-bold mb-2">
-              <a href="article.html" class="text-white hover:text-blue-400 transition-colors">Mastering UI Micro-Interactions & Transitions</a>
+              <a href="article2.html" class="text-white hover:text-blue-400 transition-colors">Mastering UI Micro-Interactions & Transitions</a>
             </h3>
             <p class="text-slate-300 text-sm line-clamp-3 mb-6 flex-grow">Improving application polish and user feedback using native CSS hover effects and fluid scale transitions.</p>
             <div class="flex items-center justify-between text-xs text-slate-400 pt-4 border-t border-slate-800">
-              <span>Sarah Chen</span>
+              <div class="flex items-center space-x-2">
+                <img src="https://i.pravatar.cc/100?img=47" alt="Sarah Chen" class="w-6 h-6 rounded-full object-cover border border-slate-700">
+                <span class="font-medium text-slate-300">Sarah Chen</span>
+              </div>
               <span>Sep 28, 2026</span>
             </div>
           </div>
@@ -120,11 +126,14 @@
               <span class="text-slate-400">10 min read</span>
             </div>
             <h3 class="text-lg font-bold mb-2">
-              <a href="article.html" class="text-white hover:text-blue-400 transition-colors">Edge Computing Patterns for Global Delivery</a>
+              <a href="article3.html" class="text-white hover:text-blue-400 transition-colors">Edge Computing Patterns for Global Delivery</a>
             </h3>
             <p class="text-slate-300 text-sm line-clamp-3 mb-6 flex-grow">Architectural strategies for serving static assets and dynamic APIs directly at distributed edge nodes.</p>
             <div class="flex items-center justify-between text-xs text-slate-400 pt-4 border-t border-slate-800">
-              <span>David Marcus</span>
+              <div class="flex items-center space-x-2">
+                <img src="https://i.pravatar.cc/100?img=33" alt="David Marcus" class="w-6 h-6 rounded-full object-cover border border-slate-700">
+                <span class="font-medium text-slate-300">David Marcus</span>
+              </div>
               <span>Sep 24, 2026</span>
             </div>
           </div>
@@ -141,11 +150,14 @@
               <span class="text-slate-400">6 min read</span>
             </div>
             <h3 class="text-lg font-bold mb-2">
-              <a href="article.html" class="text-white hover:text-blue-400 transition-colors">Semantic HTML Guidelines & Best Practices</a>
+              <a href="article1.html" class="text-white hover:text-blue-400 transition-colors">Semantic HTML Guidelines & Best Practices</a>
             </h3>
             <p class="text-slate-300 text-sm line-clamp-3 mb-6 flex-grow">Maximizing document accessibility, screen reader navigation, and SEO using standard HTML5 landmarks.</p>
             <div class="flex items-center justify-between text-xs text-slate-400 pt-4 border-t border-slate-800">
-              <span>Alex Rivera</span>
+              <div class="flex items-center space-x-2">
+                <img src="https://i.pravatar.cc/100?img=12" alt="Alex Rivera" class="w-6 h-6 rounded-full object-cover border border-slate-700">
+                <span class="font-medium text-slate-300">Alex Rivera</span>
+              </div>
               <span>Sep 20, 2026</span>
             </div>
           </div>
@@ -162,11 +174,14 @@
               <span class="text-slate-400">4 min read</span>
             </div>
             <h3 class="text-lg font-bold mb-2">
-              <a href="article.html" class="text-white hover:text-blue-400 transition-colors">Building Accessible Dark Mode Palettes</a>
+              <a href="article2.html" class="text-white hover:text-blue-400 transition-colors">Building Accessible Dark Mode Palettes</a>
             </h3>
             <p class="text-slate-300 text-sm line-clamp-3 mb-6 flex-grow">Structuring CSS color contrast ratios to meet WCAG AA accessibility standards seamlessly across dark themes.</p>
             <div class="flex items-center justify-between text-xs text-slate-400 pt-4 border-t border-slate-800">
-              <span>Sarah Chen</span>
+              <div class="flex items-center space-x-2">
+                <img src="https://i.pravatar.cc/100?img=47" alt="Sarah Chen" class="w-6 h-6 rounded-full object-cover border border-slate-700">
+                <span class="font-medium text-slate-300">Sarah Chen</span>
+              </div>
               <span>Sep 15, 2026</span>
             </div>
           </div>
@@ -183,11 +198,14 @@
               <span class="text-slate-400">8 min read</span>
             </div>
             <h3 class="text-lg font-bold mb-2">
-              <a href="article.html" class="text-white hover:text-blue-400 transition-colors">Zero-Trust Models for Frontend Security</a>
+              <a href="article3.html" class="text-white hover:text-blue-400 transition-colors">Zero-Trust Models for Frontend Security</a>
             </h3>
             <p class="text-slate-300 text-sm line-clamp-3 mb-6 flex-grow">Implementing robust Content Security Policies (CSP) and client-side token validation.</p>
             <div class="flex items-center justify-between text-xs text-slate-400 pt-4 border-t border-slate-800">
-              <span>David Marcus</span>
+              <div class="flex items-center space-x-2">
+                <img src="https://i.pravatar.cc/100?img=33" alt="David Marcus" class="w-6 h-6 rounded-full object-cover border border-slate-700">
+                <span class="font-medium text-slate-300">David Marcus</span>
+              </div>
               <span>Sep 10, 2026</span>
             </div>
           </div>
@@ -199,8 +217,15 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-slate-900 border-t border-slate-800 py-6 text-center text-sm text-slate-500">
-    <p>Designed and built by Nadine</p>
+  <footer class="bg-slate-900 border-t border-slate-800 py-8 text-sm text-slate-400 mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>© 2026 DevInsights. Designed and built by Nadine.</p>
+      <div class="flex space-x-6 text-xs text-slate-400">
+        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+        <a href="#" class="hover:text-white transition-colors">GitHub</a>
+      </div>
+    </div>
   </footer>
 
 </body>
