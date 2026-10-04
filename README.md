@@ -5,7 +5,7 @@ A responsive, accessible, and modern multi-page blog website built with clean HT
 ##  Live Demo
 
 - **Deployed URL:** [https://modern-blog-zeta.vercel.app/]
-- **Repository:** [https://github.com/niyomubyeyi150-sudo/Modern-Blog-Website]
+- **Repository:** [https://github.com/niyomubyeyi150-sudo/Modern-Blog-Website.git]
 
 ##  Features & Highlights
 
