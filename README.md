@@ -34,4 +34,5 @@ text
 └── README.md             # Project documentation
 
 ## Home page screenshoot
-screenshoot:![Uploading image.png…]()
+screenshoot:![my home-page](image.png)
+home-page articles:[home-article](image-1.png)
