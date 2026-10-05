@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Tech & Web Dev Insight</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+   
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col font-['Inter',sans-serif]">
 
@@ -35,10 +33,20 @@
   <!-- Main Container -->
   <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 mt-16">
     
-    <!-- Banner Section -->
+    <!-- Banner Section with Background Image -->
     <section class="relative overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 p-8 sm:p-12 mb-12 shadow-2xl">
+      <!-- Background Image -->
+      <img 
+        src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1600&q=80" 
+        alt="Banner Background" 
+        class="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
+      />
+      <!-- Dark Gradient Overlay for Contrast -->
+      <div class="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/80 to-slate-950/40 pointer-events-none"></div>
+
+      <!-- Banner Content -->
       <div class="max-w-2xl relative z-10">
-        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-blue-500/20 text-blue-400 border border-blue-500/30 mb-4">
+        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-blue-500/20 text-blue-400 border border-blue-500/30 mb-4 backdrop-blur-sm">
           Engineering Digest
         </span>
         <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-4 leading-tight">
